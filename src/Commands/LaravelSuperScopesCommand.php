@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RyanChandler\LaravelSuperScopes\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelSuperScopesCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-super-scopes';
 
     public $description = 'My command';
 
