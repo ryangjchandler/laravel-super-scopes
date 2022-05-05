@@ -2,24 +2,13 @@
 
 namespace RyanChandler\LaravelSuperScopes;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RyanChandler\LaravelSuperScopes\Commands\LaravelSuperScopesCommand;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\ServiceProvider;
 
-class LaravelSuperScopesServiceProvider extends PackageServiceProvider
+class LaravelSuperScopesServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function boot()
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('laravel-super-scopes')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-super-scopes_table')
-            ->hasCommand(LaravelSuperScopesCommand::class);
+        //
     }
 }
